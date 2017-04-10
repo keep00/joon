@@ -17,4 +17,14 @@ public class SampleController {
 		return "home";
 	}
 	
+	
+	@RequestMapping("/gogo")
+	public String gogo(Model model){
+		
+		
+		model.addAttribute("name", "지영");
+		model.addAttribute("ggg", "준우꺼");
+		
+		return "home";
+	}
 }
